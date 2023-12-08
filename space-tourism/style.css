@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Crimson+Text&family=Inter&family=Roboto&display=swap");
+/* ------------------Base-------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  letter-spacing: 4.75;
+}
+
+/* ------------------Layout-------------------- */
+/* ------------------Module-------------------- */
+#explore {
+  width: 274px;
+  height: 274px;
+  flex-shrink: 0;
+  border-radius: 274px;
+  background-color: #FFFFFF;
+}
+
+/* ------------------State-------------------- */
+/* ------------------Theme-------------------- */
+/* ------------------Changeing state-------------------- *//*# sourceMappingURL=style.css.map */
