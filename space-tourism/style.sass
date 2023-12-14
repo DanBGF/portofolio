@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Crimson+Text&family=Inter&family=Roboto&display=swap')
 
 $white: #FFFFFF
+$white-op: #ffffff80
 $light-blue: #D0D6F9
 $dark-blue: #0B0D17
+
 
 /* ------------------Base-------------------- */
 * 
@@ -10,7 +11,9 @@ $dark-blue: #0B0D17
     margin: 0
     padding: 0
 
-
+h1, h2, h3, h4, h5
+    color: $white
+    font-family: 'Bellefair'
 
 h1 
     font-size: 150px
@@ -25,25 +28,110 @@ h4
     font-size: 32px
 
 h5
-    font-family: Georgia, 'Times New Roman', Times, serif 
+    color: $light-blue
+    font-family: 'Barlow Condensed'
     font-size: 28px
+    font-weight: 400
     letter-spacing: 4.75
 
+body
+    background-image: url("img/home/background-home-desktop.jpg")
+    background-repeat: no-repeat
+    background-size: cover 
+
+hr
+    width: 500px
+    height: 1px
+    border: 0
+    position: absolute
+    transform: translate(-520px, 48px)
+    background: rgba(255, 255, 255, 0.252)
+
+img
+    margin-left: 55px
+    align-self: center
+
+button
+    height: 100%
+    margin-left: 60px
+    border: none
+    background: none
+    color: $white
+    font-family: 'Barlow Condensed'
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 2.7px
 /* ------------------Layout-------------------- */
+header
+    padding: 0
+    margin-top: 40px
+    width: 100%
+    display: flex
+    
+
+
+  
+main
+    display: flex
+    width: 100%
+    flex-direction: row
+    
 
 /* ------------------Module-------------------- */
+.navbar
+    width: 830px
+    height: 96px
+    padding-left: 63px
+    margin-left: auto 
+
+
+   
+#container
+    width: 460px
+    height: 400px
+    margin-left: 165px
+    margin-top: 150px
+    h1
+        margin: 24px, 0px, 24px, 0px
+
 #explore
     width: 274px
     height: 274px
-    flex-shrink: 0
+    margin-left: 450px
+    margin-top: 200px
     border-radius: 274px
     background-color: $white
+    display: flex
+    align-items: center
+    justify-content: center
+    p
+        color: $dark-blue
+        font-size: 32px
+        
 /* ------------------State-------------------- */
+
+.active
+    border-bottom: solid $white
 
 /* ------------------Theme-------------------- */
 
-white
+#container
+    p
+        color: $light-blue
+        font-family: 'Barlow'
+        font-size: 18px
+        font-weight: 400
+        line-height: 32px
+
+.navbar
+    background: rgba(255, 255, 255, 0.04)
+    backdrop-filter: blur(40.774227142333984px)
 
 
 
 /* ------------------Changeing state-------------------- */
+.idle:hover
+    cursor: pointer
+    border-bottom: solid $white-op
+
+        
