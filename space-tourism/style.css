@@ -98,7 +98,9 @@ main {
   margin: 24px, 0px, 24px, 0px;
 }
 
-#explore {
+.explore {
+  position: absolute;
+  flex-shrink: 0;
   width: 274px;
   height: 274px;
   margin-left: 450px;
@@ -109,14 +111,29 @@ main {
   align-items: center;
   justify-content: center;
 }
-#explore p {
+.explore p {
   color: #0B0D17;
   font-size: 32px;
+}
+
+.extend {
+  z-index: -1;
+  position: absolute;
+  background: #FFFFFF;
+  opacity: 0.1;
+}
+
+.transition {
+  transition: transform 0.5s;
 }
 
 /* ------------------State-------------------- */
 .active {
   border-bottom: solid #FFFFFF;
+}
+
+.navbar .idle {
+  border-bottom: solid rgba(255, 255, 255, 0);
 }
 
 /* ------------------Theme-------------------- */
@@ -135,7 +152,20 @@ main {
 }
 
 /* ------------------Changeing state-------------------- */
-.idle:hover {
+.explore:hover {
   cursor: pointer;
-  border-bottom: solid rgba(255, 255, 255, 0.5019607843);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.navbar .idle:hover {
+  transition: border-bottom 0.6s;
+  border-bottom: solid rgba(255, 255, 255, 0.502);
+}
+
+.navbar .idle:not(:hover) {
+  border-bottom: solid rgba(255, 255, 255, 0);
+  transition: border-bottom 0.6s;
 }/*# sourceMappingURL=style.css.map */
